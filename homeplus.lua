@@ -1,12 +1,12 @@
 --setup
 if not fs.exists("/.sPhone/apps/homeplus/shellIcon") then
-	f = fs.open("/.sPhone/apps/homeplus/shellIcon","w")
+	local f = fs.open("/.sPhone/apps/homeplus/shellIcon","w")
 	f.write("4fff\nf4ff\n4f44")
 	f.close()
 end
 
 if not fs.exists("/.sPhone/config/homeplus/icons") then
-	f = fs.open("/.sPhone/config/homeplus/icons","w")
+	local f = fs.open("/.sPhone/config/homeplus/icons","w")
 	f.write("{[1] = {\"Shell\", \"/rom/programs/shell\"},}")
 	f.close()
 end
